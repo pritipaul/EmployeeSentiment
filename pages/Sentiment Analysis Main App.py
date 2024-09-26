@@ -107,7 +107,7 @@ data = {
         'Toxic environment with no opportunities for advancement in technology, worst training provided at the time of joining this organization. Employees are overworked and completely undervalued by the company.',
         'Worst experience ever in this company. No career growth, no raises, and zero employee development over the last five years.',
         'Awful management, no promotions, no career growth, and a lack of respect for employee contributions. Avoid at all costs.',
-        'An amazing company with a supportive work environment, excellent growth opportunities, and a great work-life balance. The leadership is approachable, and the team culture fosters collaboration and innovation. Overall, it's a fantastic place to build a rewarding career.'
+        'An amazing company with a supportive work environment, excellent growth opportunities, and a great work-life balance. The leadership is approachable, and the team culture fosters collaboration and innovation. Overall, its a fantastic place to build a rewarding career.'
     ]
 }
 
