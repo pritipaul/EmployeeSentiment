@@ -139,4 +139,5 @@ for index, row in df.iterrows():
         with col1:
             st.markdown(f"<div class='custom-box'>{row['Reviews']}</div>", unsafe_allow_html=True)
             st.code(row['Reviews'], language='')
+            st.markdown(f"<div class='custom-box'>{row['Reviews']}</div>", unsafe_allow_html=True)
 
