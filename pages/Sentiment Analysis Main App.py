@@ -139,10 +139,3 @@ for index, row in df.iterrows():
             # st.code(row['Reviews'], language='')
             # st.markdown(f"<div class='custom-box'>{row['Reviews']}</div>", unsafe_allow_html=True)
             st.code(f"<div class='custom-box'>{row['Reviews']}</div>", unsafe_allow_html=True, language ='')
-                        console.error('Could not copy text: ', err);
-                    }});
-                }}
-                </script>
-                """,
-                unsafe_allow_html=True
-            )
