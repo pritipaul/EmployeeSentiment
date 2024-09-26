@@ -31,7 +31,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-model = load_model('./model_GRU.h5')
+model = load_model('./Sentiment-Analysis.h5')
 
 with open('./tokenizer.pkl', 'rb') as handle:
     tokenizer = pickle.load(handle)
