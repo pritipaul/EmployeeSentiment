@@ -145,7 +145,19 @@ for index, row in df.iterrows():
             # Adjust the container height based on review length
             st.markdown(f"<div class='custom-box'>{row['Reviews']}</div>", unsafe_allow_html=True)
         with col2:
-            if st.button("Copy to Clipboard", key=index):
-                # Copy the review text to clipboard
-                pyperclip.copy(row['Reviews'])
-                st.success("Copied to clipboard!")
+            # Creating a copy button with JavaScript functionality
+            st.markdown(
+                f"""
+                <button onclick="copyToClipboard('{row['Reviews']}')">Copy to Clipboard</button>
+                <script>
+                function copyToClipboard(text) {{
+                    navigator.clipboard.writeText(text).then(function() {{
+                        alert('Copied to clipboard!');
+                    }}, function(err) {{
+                        console.error('Could not copy text: ', err);
+                    }});
+                }}
+                </script>
+                """,
+                unsafe_allow_html=True
+            )
