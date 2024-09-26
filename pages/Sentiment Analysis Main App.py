@@ -28,7 +28,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-model = tf.keras.models.load_model('model_GRU.h5')
+model = tf.keras.models.load_model('./model_GRU.h5')
 
 with open('tokenizer.pkl', 'rb') as handle:
     tokenizer = pickle.load(handle)
@@ -62,7 +62,7 @@ def get_sentiment_label(prediction):
 
 column1, column2 = st.columns([1, 6])  
 with column1:
-    st.image("sentimentlogo.png", width=100)
+    st.image("./sentimentlogo.png", width=100)
 with column2:
     st.title("Sentiment Analysis App")
 
