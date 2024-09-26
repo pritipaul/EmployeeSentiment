@@ -93,12 +93,12 @@ if st.button("Predict Sentiment"):
 
 data = {
     'Reviews': [
-        'This product is amazing!',
-        'Not what I expected.',
-        'Satisfied with the quality.',
-        'Could be better.',
-        'Worst experience ever.',
-        'The company provides a dynamic and innovative work environment that encourages creativity and continuous improvement. Employees are constantly challenged with exciting projects that push them to think outside the box and develop new skills. There’s a strong focus on fostering a culture of collaboration, where team members work together to achieve shared goals.'
+        'The company provides a dynamic and innovative work environment that encourages creativity and continuous improvement. Employees are constantly challenged with exciting projects that push them to think outside the box and develop new skills. There’s a strong focus on fostering a culture of collaboration, where team members work together to achieve shared goals.',
+        'The company provides a stable working environment, but career growth opportunities are limited.',
+        'Work-life balance is acceptable, though the workload can vary based on the project.',        
+        'Management is okay, not too strict, but not particularly motivating either.',
+        'The benefits are average, nothing exceptional but sufficient for basic needs.',
+        'The office culture is professional, but there’s little in terms of team bonding activities.'
     ]
 }
 
