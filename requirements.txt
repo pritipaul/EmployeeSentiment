@@ -5,4 +5,4 @@ numpy
 tensorflow
 regex
 keras
-Keras-Preprocessing
+keras.preprocessing.text
