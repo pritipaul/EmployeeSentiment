@@ -2,7 +2,7 @@ nltk
 pandas
 streamlit
 numpy
-tensorflow==2.13
+tensorflow==2.13.1
 regex
 keras
 keras-preprocessing
