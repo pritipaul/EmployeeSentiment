@@ -1,5 +1,4 @@
 import nltk
-# nltk.download('all')
 nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('punkt_tab')
@@ -112,59 +111,10 @@ data = {
     ]
 }
 
-# df = pd.DataFrame(data)
-
-# for index, row in df.iterrows():
-#     with st.container():
-#         col1,col2 = st.columns([3,1])
-#         # col2.write(row['Sentiment'])
-#         with col1:
-#             st.code(row['Reviews'], language='')
-            
-# Adding CSS to modify the appearance of st.code
-st.markdown(
-    """
-    <style>
-    .custom-code {
-        background-color: #f5f5f5;  /* Optional: Change background color */
-        padding: 10px;               /* Optional: Add padding */
-        border-radius: 5px;          /* Optional: Add border radius */
-        font-size: 16px;             /* Adjust font size */
-        height: auto;                /* Adjust height */
-        width: 100%;                 /* Make the width responsive */
-        overflow-wrap: break-word;   /* Allow long words to break */
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
-# Sample DataFrame
 df = pd.DataFrame(data)
-
-# Displaying reviews without scroll bars
-st.subheader("Sample Reviews For Testing:")
 
 for index, row in df.iterrows():
     with st.container():
-        col1, col2 = st.columns([3, 1])
+        col1,col2 = st.columns([3,1])
         with col1:
-            # Display the review in a custom styled code block
-            st.markdown(f"<pre class='custom-code'>{row['Reviews']}</pre>", unsafe_allow_html=True)
-        with col2:
-            # Creating a copy button with JavaScript functionality
-            st.markdown(
-                f"""
-                <button onclick="copyToClipboard('{row['Reviews'].replace('\'', '\\\'')}')">Copy to Clipboard</button>
-                <script>
-                function copyToClipboard(text) {{
-                    navigator.clipboard.writeText(text).then(function() {{
-                        alert('Copied to clipboard!');
-                    }}, function(err) {{
-                        console.error('Could not copy text: ', err);
-                    }});
-                }}
-                </script>
-                """,
-                unsafe_allow_html=True
-            )
+            st.code(row['Reviews'], language='')
