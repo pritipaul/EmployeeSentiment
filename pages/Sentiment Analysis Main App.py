@@ -94,7 +94,7 @@ if st.button("Predict Sentiment"):
 data = {
     'Reviews': [
         'The company provides a dynamic and innovative work environment that encourages creativity and continuous improvement. Employees are constantly challenged with exciting projects that push them to think outside the box and develop new skills. There’s a strong focus on fostering a culture of collaboration, where team members work together to achieve shared goals.',
-        'The company provides a stable working environment, but career growth opportunities are limited.',
+        'The office provides a stable working environment, but career growth opportunities are limited.',
         'Work-life balance is acceptable, though the workload can vary based on the project.',        
         'Management is okay, not too strict, but not particularly motivating either.',
         'The benefits are average, nothing exceptional but sufficient for basic needs.',
