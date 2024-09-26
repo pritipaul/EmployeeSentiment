@@ -1,6 +1,6 @@
 nltk
 pandas
-streamlit
+streamlit==1.38.0
 numpy
 tensorflow<=2.13.0
 regex
