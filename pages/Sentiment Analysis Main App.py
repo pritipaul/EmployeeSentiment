@@ -32,7 +32,7 @@ st.markdown(
 
 # model = load_model('./model_GRU.h5')
 
-with open('tokenizer.pkl', 'rb') as handle:
+with open('./tokenizer.pkl', 'rb') as handle:
     tokenizer = pickle.load(handle)
 
 
