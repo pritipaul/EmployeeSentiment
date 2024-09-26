@@ -19,7 +19,7 @@ st.markdown(
 
 column1, column2 = st.columns([1, 6])  
 with column1:
-    st.image("sentimentlogo.png", width=100)
+    st.image("./sentimentlogo.png", width=100)
 with column2:
     st.title("Welcome to the Sentiment Analysis App")
 
