@@ -6,3 +6,4 @@ tensorflow
 regex
 keras
 keras-preprocessing
+keras-src-preprocessing
