@@ -3,6 +3,6 @@ pandas
 streamlit
 numpy
 tensorflow
-re
+regex
 pickle
 keras
