@@ -15,6 +15,7 @@ from nltk.stem import PorterStemmer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.preprocessing.text import Tokenizer
 from keras.models import load_model
+import pyperclip
 
 
 st.set_page_config(page_title="Sentiment Analysis App", page_icon="😊")
