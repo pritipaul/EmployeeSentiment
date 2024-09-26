@@ -70,7 +70,7 @@ with column2:
     st.title("Sentiment Analysis App")
 
 
-st.write("This app predicts the sentiment of text based on different sources.")
+st.write("This app predicts the sentiment of text based reviews.")
 
 user_input = st.text_area("Please Write a Review:","")
 
