@@ -131,29 +131,14 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# for index, row in df.iterrows():
-#     with st.container():
-#         col1,col2 = st.columns([3,1])
-#         # col2.write(row['Sentiment'])
-#         with col1:
-#             st.code(row['Reviews'], language='')
-#             st.markdown(f"<div class='custom-box'>{row['Reviews']}</div>", unsafe_allow_html=True)
 for index, row in df.iterrows():
     with st.container():
-        col1, col2 = st.columns([4, 1])
+        col1,col2 = st.columns([3,1])
+        # col2.write(row['Sentiment'])
         with col1:
-            # Adjust the container height based on review length
-            st.markdown(f"<div class='custom-box'>{row['Reviews']}</div>", unsafe_allow_html=True)
-        with col2:
-            # Creating a copy button with JavaScript functionality
-            st.markdown(
-                f"""
-                <button onclick="copyToClipboard('{row['Reviews']}')">Copy to Clipboard</button>
-                <script>
-                function copyToClipboard(text) {{
-                    navigator.clipboard.writeText(text).then(function() {{
-                        alert('Copied to clipboard!');
-                    }}, function(err) {{
+            # st.code(row['Reviews'], language='')
+            # st.markdown(f"<div class='custom-box'>{row['Reviews']}</div>", unsafe_allow_html=True)
+            st.code(f"<div class='custom-box'>{row['Reviews']}</div>", unsafe_allow_html=True, language ='')
                         console.error('Could not copy text: ', err);
                     }});
                 }}
