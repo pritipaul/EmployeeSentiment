@@ -98,7 +98,13 @@ data = {
         'Work-life balance is acceptable, though the workload can vary based on the project.',        
         'Management is okay, not too strict, but not particularly motivating either.',
         'The benefits are average, nothing exceptional but sufficient for basic needs.',
-        'The office culture is professional, but there’s little in terms of team bonding activities.'
+        'The office culture is professional, but there’s little in terms of team bonding activities.',
+        'Great place to work with excellent career development opportunities and supportive management.',
+        'The benefits package is fantastic, and the company truly cares about employee well-being.',
+        'The leadership team is inspiring, and there are always new challenges to keep you engaged.',
+        'Amazing work-life balance, and the flexibility to work remotely is a huge bonus.',
+        'The company provides a dynamic and innovative work environment with plenty of growth potential.',
+                
     ]
 }
 
