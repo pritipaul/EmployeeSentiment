@@ -2,6 +2,7 @@ import nltk
 # nltk.download('all')
 nltk.download('punkt')
 nltk.download('stopwords')
+nltk.download('punkt_tab')
 import pandas as pd
 import streamlit as st
 import numpy as np
