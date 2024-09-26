@@ -113,29 +113,11 @@ data = {
 }
 
 df = pd.DataFrame(data)
-st.markdown(
-    """
-    <style>
-    .custom-box {
-        background-color: #f5f5f5;
-        padding: 10px;
-        margin-bottom: 10px;
-        border-radius: 5px;
-        color: black;
-        word-wrap: break-word;
-        white-space: normal;
-        font-size: 16px;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 
 for index, row in df.iterrows():
     with st.container():
         col1,col2 = st.columns([3,1])
         # col2.write(row['Sentiment'])
         with col1:
-            # st.code(row['Reviews'], language='')
-            # st.markdown(f"<div class='custom-box'>{row['Reviews']}</div>", unsafe_allow_html=True)
-            st.code(f"<div class='custom-box'>{row['Reviews']}</div>", unsafe_allow_html=True, language ='')
+            st.code(row['Reviews'], language='')
+            
