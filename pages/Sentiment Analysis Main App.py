@@ -97,7 +97,8 @@ data = {
         'Not what I expected.',
         'Satisfied with the quality.',
         'Could be better.',
-        'Worst experience ever.'
+        'Worst experience ever.',
+        'The company provides a dynamic and innovative work environment that encourages creativity and continuous improvement. Employees are constantly challenged with exciting projects that push them to think outside the box and develop new skills. There’s a strong focus on fostering a culture of collaboration, where team members work together to achieve shared goals.'
     ]
 }
 
