@@ -4,5 +4,4 @@ streamlit
 numpy
 tensorflow
 regex
-pickle
 keras
