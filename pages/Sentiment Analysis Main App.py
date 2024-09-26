@@ -13,6 +13,8 @@ from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 from keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.preprocessing.text import Tokenizer
+from keras.models import load_model
+
 
 st.set_page_config(page_title="Sentiment Analysis App", page_icon="😊")
 
@@ -28,7 +30,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-model = tf.keras.models.load_model('model_GRU.h5')
+model = load_model('model_GRU.h5')
 
 with open('tokenizer.pkl', 'rb') as handle:
     tokenizer = pickle.load(handle)
