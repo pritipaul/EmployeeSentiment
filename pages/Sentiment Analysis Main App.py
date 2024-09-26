@@ -131,13 +131,21 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.subheader("Sample Reviews For Testing:")
-
+# for index, row in df.iterrows():
+#     with st.container():
+#         col1,col2 = st.columns([3,1])
+#         # col2.write(row['Sentiment'])
+#         with col1:
+#             st.code(row['Reviews'], language='')
+#             st.markdown(f"<div class='custom-box'>{row['Reviews']}</div>", unsafe_allow_html=True)
 for index, row in df.iterrows():
     with st.container():
-        col1,col2 = st.columns([3,1])
-        # col2.write(row['Sentiment'])
+        col1, col2 = st.columns([4, 1])
         with col1:
-            st.code(row['Reviews'], language='')
+            # Adjust the container height based on review length
             st.markdown(f"<div class='custom-box'>{row['Reviews']}</div>", unsafe_allow_html=True)
-
+        with col2:
+            if st.button("Copy to Clipboard", key=index):
+                # Copy the review text to clipboard
+                pyperclip.copy(row['Reviews'])
+                st.success("Copied to clipboard!")
