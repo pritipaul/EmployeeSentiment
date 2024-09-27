@@ -115,6 +115,6 @@ df = pd.DataFrame(data)
 
 for index, row in df.iterrows():
     with st.container():
-        col1,col2 = st.columns([3,1])
+        col1,col2 = st.columns([6,1])
         with col1:
             st.code(row['Reviews'], language='')
