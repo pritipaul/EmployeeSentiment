@@ -112,9 +112,9 @@ data = {
 }
 
 df = pd.DataFrame(data)
-
+st.subheader("Sample Reviews For Testing:")
 for index, row in df.iterrows():
     with st.container():
-        col1,col2 = st.columns([6,1])
+        col1,col2 = st.columns([10,1])
         with col1:
             st.code(row['Reviews'], language='')
